@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="myarea">지준오 영역</h1>
+    <h2 id="dblclickarea" style="display: none; font-style: italic;">지준오를 더블클릭</h2>
+	<script>
+	var myarea = document.querySelector("#myarea")
+    myarea.ondblclick = function(){
+      document.querySelector('#dblclickarea').style.display = "block";
+      document.querySelector('#myarea').style.display = "none"; 
+    }
+	</script>
+</body>
+</html>

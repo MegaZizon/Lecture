@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>속성 선택자</title>
+	<style>
+	ul {
+		 list-style: none;
+		}
+	li {
+		 width: 90px;	 
+		 display: inline-block;
+		 margin: 10px;
+	 }
+	li a {
+		padding: 5px 5px;
+		font-size: 14px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	a[href] {
+		color:white;
+		background: black;
+		border: 1px solid #fff;
+	 }
+	a[target=newwin]{
+		font-size:12px;
+		padding-right:10px;
+		background: url(image/newwindow.png) no-repeat center right;
+        color: #fcdf40;
+        background-color: #4b4b4a;
+        position:relative;
+		text-decoration: none;
+		font-weight: bold;
+        border: 5px double #402bf8;
+		
+	}
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a>메인 메뉴 </a></li>
+		<li><a href="#">메뉴 1</a></li>
+		<li><a href="#">메뉴 2</a></li>
+		<li><a href="#">메뉴 3</a></li>
+		<li><a target="newwin">메뉴 4</a></li>
+	</ul>
+  </body>
+ </html>

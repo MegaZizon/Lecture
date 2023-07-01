@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DOM CSS</title>
+	<style>
+		.junoh_shape {
+			width:100px;
+			height:100px;			
+			border:1px solid #222;
+			transition: 1s;
+		}
+	</style>
+</head>
+<body>
+	<p>도형 트랜지션 </p>
+	<div class="junoh_shape"></div>
+	
+	<script>
+		const rect= document.querySelector(".junoh_shape");
+		rect.addEventListener("mouseover", function() {
+			rect.style.backgroundColor = "green"; 
+			rect.style.borderRadius = "50%"; 
+		});
+		rect.addEventListener("mouseout", function() { 
+			rect.style.backgroundColor = ""; 
+			rect.style.borderRadius = "";  
+		});
+	</script>
+</body>
+</html>

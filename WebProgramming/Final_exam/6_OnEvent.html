@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<ul>
+		<li><a href="#">gildong_Green</a></li>
+		<li><a href="#">gildong_Orange</a></li>
+		<li><a href="#">gildong_Purple</a></li>
+	</ul>		
+</body>
+<script>
+	var junoh=document.querySelectorAll("li")
+
+	junoh[0].onmouseover= function() {
+		alert("마우스 올라감.");
+    };
+	junoh[1].onclick= function() {
+		alert("버튼 클릭");
+    };
+	junoh[2].ondblclick= function() {
+		alert("버튼 더블클릭");
+    };
+</script>
+</html>  

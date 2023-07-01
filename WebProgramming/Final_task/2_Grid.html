@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #wrapper {
+      width: 500px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "jijunoh2 jijunoh3 jijunoh4 jijunoh4"
+        "jijunoh2 . jijunoh4 jijunoh4"
+        "jijunoh2 . . jijunoh5"
+        "jijunoh1 jijunoh1 jijunoh1 jijunoh5";
+    }
+
+    .box {
+      padding: 15px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .box1 {
+      background-color: #3689ff;
+      grid-area: jijunoh1;
+    }
+
+    .box2 {
+      background-color: #00cf12;
+      grid-area: jijunoh2;
+    }
+
+    .box3 {
+      background-color: #ff9019;
+      grid-area: jijunoh3;
+    }
+
+    .box4 {
+      background-color: #ffd000;
+      grid-area: jijunoh4;
+    }
+
+    .box5 {
+      background-color: #00ffff;
+      grid-area: jijunoh5;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+    <div class="box box5">box5</div>
+  </div>
+</body>
+
+</html>

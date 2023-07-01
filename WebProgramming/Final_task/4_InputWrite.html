@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <form name="test" onsubmit="process()">
+   <input type="text" name="junoh" size="10"></input>
+   <input type="submit"></input>
+</form>
+
+<script>
+function process()
+{
+   var jo=document.getElementsByName("junoh");
+   document.write(jo[0].value);
+}
+</script>
+ </body>
+</html>

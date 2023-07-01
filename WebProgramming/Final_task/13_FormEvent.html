@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+<form>
+  <label>이름:</label>
+  <input type="text" id="myinput" name="myname" size="10" />
+  <input type="button" id="mybtn" value="송신" />
+</form>
+<div id="result"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('mybtn').addEventListener('click', function() { //빈칸 수정
+    var text_out =document.getElementsByName('myname'); //빈칸 수정
+    document.write(text_out[0].value); 
+  }, false);
+}, false);
+</script>
+</body>
+</html>

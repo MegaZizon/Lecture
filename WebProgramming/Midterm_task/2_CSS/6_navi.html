@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>link 스타일</title>
+  <style>
+    .container {
+      width: 960px;
+      margin : 0 auto;
+    }
+    .jijunoh_class{
+      width: 960px;
+      height: 60px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    .jijunoh_class ul{
+      list-style: none;
+      padding-top: 10px; 
+      padding-bottom: 5px;
+    }
+    .jijunoh_class ul li {
+      float: left;
+      width: 150px;
+      padding: 10px;   
+    }
+    .jijunoh_class a:link, .jijunoh_class a:visited{  /* 방문한 링크와 방문하지 않은 링크를 설정 */
+      display: block;
+      font-size: 14px;
+      color :#000;
+      padding: 10px; 
+      text-decoration: none;   /*밑줄 없앰 */
+      text-align: center;
+    }
+	.jijunoh_class a:visited{  /* 방문한 링크와 방문하지 않은 링크를 설정 */
+      display: block;
+      font-size: 14px;
+      color :#000;
+      padding: 10px; 
+      text-decoration: none;   /*밑줄 없앰 */
+      text-align: center;
+    }
+    .jijunoh_class a:hover {
+			background-color:#030303;  
+   			color:#fffff1; 
+		}
+    .jijunoh_class a:focus {
+      border:0.1px dashed #10259c;
+			color:#fffffc;
+			background-color: #42f532;
+		}
+    .jijunoh_class a:active {
+      border: #f11f03;
+			color:#fffffc;
+			background-color: #f11f03;
+		}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="jijunoh_class">
+      <ul>
+        <li><a href="#">이용 안내</a></li>
+        <li><a href="#">객실 소개</a></li>
+        <li><a href="#">예약 방법 및 요금</a></li>
+        <li><a href="#">예약하기</a></li>
+      </ul>
+    </nav>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--124Page-->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 가입</title>
+    <style>
+        #container {
+            border: 5px dashed rgb(2, 2, 2);
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>
+            <center>회원 가입</center>
+        </h1> 
+        <form>
+            
+            <ul>
+
+                <li>
+                    <label>아이디</label> 
+                    <input type="text" placeholder="ID를 넣으세요"><br>
+                </li>
+                <li>
+                    <label>이메일</label>
+                    <input type="email"><br>
+                </li>
+                <li>
+                    <label>관심분야</label>
+                    <label><input type="checkbox" name="junoh" value="camp">캠핑</label>
+                    <label><input type="checkbox" name="junoh" value="hike">등산</label>
+                    <label><input type="checkbox" name="junoh" value="movie">영화</label>
+                    <label><input type="checkbox" name="junoh" value="read">독서</label><br>
+                </li>
+                <li>
+                    <label>
+                        직업선택
+                        <select>
+                            <option>교수</option>
+                            <option>운동선수</option>
+                            <option>의사</option>
+                            <option>엔지니어</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>나이선택</label>
+                    <input type="radio" name=age>
+                    <label>10대</label>
+                    <input type="radio" name=age>
+                    <label>20대</label>
+                    <input type="radio" name=age>
+                    <label>30대</label>
+                    <input type="radio" name=age>
+                    <label>40대</label>
+                    <br>
+                </li>
+                <li>
+                    <label>건의사항</label>
+                    <textarea cols="40" rows="6"></textarea>
+                </li>
+                <div id="buttons">
+                    <center>
+                        <input type="submit" value="전송">
+                        <input type="reset" value="취소">
+                    </center>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

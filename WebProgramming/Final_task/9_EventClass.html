@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h1 class="junoh">지준오 이벤트</h1>	
+  
+<script>
+	var myclass = document.getElementsByClassName("junoh");
+	myclass[0].addEventListener("click",textEvent, false);
+    
+    function textEvent() {
+      document.write("click event 발생")
+    }
+
+</script>
+</body>
+</html>

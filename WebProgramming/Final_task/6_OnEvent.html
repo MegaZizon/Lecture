@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<ul>
+		<li><a href="#" id="mouseOn">junoh_Green</a></li>
+		<li><a href="#" id="mouseclick">junoh_Orange</a></li>
+		<li><a href="#" id="mousedblclick">junoh_Purple</a></li>
+	</ul>		
+	<div id="result"></div>
+</body>
+<script>
+	document.querySelector("#mouseOn").onmouseover = () => {
+		alert("마우스를 올려놨습니다.");
+    };
+	document.querySelector("#mouseclick").onclick = function() {
+		alert("버튼을 클릭했습니다.");
+    };
+	document.querySelector("#mousedblclick").ondblclick = function() {
+		alert("버튼을 더블클릭했습니다.");
+    };
+</script>
+</html>  

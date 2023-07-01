@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+<form>
+  <label>이름:</label>
+  <input type="text" id="myinput"/>
+  <input type="button" id="mybtn" value="송신" />
+</form>
+<div id="add"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('mybtn').addEventListener('click', function() { // '빈칸' 수정
+    const textOut = document.getElementById('myinput'); //'빈칸' 수정
+	  
+    const a = document.querySelector("#add");
+    a.appendChild(textOut.value);
+    const textNode = 
+  
+  // 입력된 텍스트를 텍스트노드로 생성
+    // <div> 태그에 텍스트노드 추가
+  }, false);
+}, false);
+</script>
+</body>
+</html>
